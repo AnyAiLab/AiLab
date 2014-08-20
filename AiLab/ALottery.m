@@ -13,22 +13,32 @@ static ALottery *myLottery = nil;
 
 +(ALottery *)Instance
 {
-    @synchronized(self) {
-        if(myLottery == nil) {
+    @synchronized(self)
+    {
+        if(myLottery == nil)
+        {
             myLottery = [[[self class] alloc] init];
         }
     }
     return myLottery;
 }
 
-+(id)allocWithZone:(NSZone *)zone{
-    @synchronized(self){
-        if (myLottery == nil) {
++(id)allocWithZone:(NSZone *)zone
+{
+    @synchronized(self)
+    {
+        if (myLottery == nil)
+        {
             myLottery = [super allocWithZone:zone];
             return  myLottery;
         }
     }
     return nil;
+}
+
+- (id) copyWithZone:(NSZone *)zone
+{
+    return self;
 }
 
 -(NSArray *)GenerateLottery

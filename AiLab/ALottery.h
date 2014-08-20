@@ -14,6 +14,8 @@
 @property(nonatomic,strong) NSString *LastLottery;
 
 +(ALottery *)Instance;
++(id)allocWithZone:(NSZone *)zone;
+- (id) copyWithZone:(NSZone *)zone;
 -(NSArray *)GenerateLottery;
 -(NSString *)GetLastLottery;
 @end
