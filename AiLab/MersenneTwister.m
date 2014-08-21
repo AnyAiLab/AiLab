@@ -8,11 +8,17 @@
 
 #import "MersenneTwister.h"
 
+@interface MersenneTwister ()
+{
+    NSInteger Seed;
+    BOOL isInit;
+    int Index;
+    int MT[624];
+}
+@end
+
 @implementation MersenneTwister
-NSInteger Seed;
-BOOL isInit;
-int Index;
-int MT[624];
+
 
 -(id)init
 {

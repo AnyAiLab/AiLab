@@ -40,6 +40,7 @@
 		0E592985199CE9F3000D8535 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E592984199CE9F3000D8535 /* CoreImage.framework */; };
 		0E592989199D2151000D8535 /* AMediaPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E592988199D2151000D8535 /* AMediaPlayer.m */; };
 		0E7B245019A36F89007D29BE /* MobileVLCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E7B244F19A36F89007D29BE /* MobileVLCKit.framework */; };
+		0EA6C24719A4ECAB001317A5 /* ACircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA6C24619A4ECAB001317A5 /* ACircle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,8 @@
 		0E592987199D2151000D8535 /* AMediaPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMediaPlayer.h; sourceTree = "<group>"; };
 		0E592988199D2151000D8535 /* AMediaPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMediaPlayer.m; sourceTree = "<group>"; };
 		0E7B244F19A36F89007D29BE /* MobileVLCKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileVLCKit.framework; path = ../MobileVLCKit.framework; sourceTree = "<group>"; };
+		0EA6C24519A4ECAB001317A5 /* ACircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACircle.h; sourceTree = "<group>"; };
+		0EA6C24619A4ECAB001317A5 /* ACircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACircle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +219,7 @@
 		0E59294E199CE968000D8535 /* AiLab */ = {
 			isa = PBXGroup;
 			children = (
+				0EA6C24419A4EC6E001317A5 /* Circle */,
 				0E4459CE19A0C69400AA2EBE /* Lottery */,
 				0E318B72199FB71F00564BC4 /* MT */,
 				0E318B61199F9A8500564BC4 /* AESCrypt */,
@@ -277,6 +281,15 @@
 				0E592988199D2151000D8535 /* AMediaPlayer.m */,
 			);
 			name = Player;
+			sourceTree = "<group>";
+		};
+		0EA6C24419A4EC6E001317A5 /* Circle */ = {
+			isa = PBXGroup;
+			children = (
+				0EA6C24519A4ECAB001317A5 /* ACircle.h */,
+				0EA6C24619A4ECAB001317A5 /* ACircle.m */,
+			);
+			name = Circle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -386,6 +399,7 @@
 				0E318B6E199F9A8500564BC4 /* NSData+Base64.m in Sources */,
 				0E592955199CE968000D8535 /* main.m in Sources */,
 				0E318B75199FB73300564BC4 /* MersenneTwister.m in Sources */,
+				0EA6C24719A4ECAB001317A5 /* ACircle.m in Sources */,
 				0E318B6C199F9A8500564BC4 /* AESCrypt.m in Sources */,
 				0E4459D119A0C6AD00AA2EBE /* ALottery.m in Sources */,
 				0E4459CC19A0C37300AA2EBE /* ALotteryViewController.m in Sources */,
